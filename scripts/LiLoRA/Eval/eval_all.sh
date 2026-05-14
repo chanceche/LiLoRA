@@ -11,8 +11,8 @@ INSTRUCTION_ROOT="$REPO_ROOT/data/CVIT_benchmark/Instructions_Single"
 IMAGE_FOLDER="$REPO_ROOT/data/datasets"
 OUTPUT_ROOT="$REPO_ROOT/checkpoints/Instruction_single_type"
 RESULT_ROOT="$REPO_ROOT/results/Instruction_single_type"
-MODEL_BASE="$REPO_ROOT/models/vicuna-7b-v1.5"
-MM_PRETRAIN_PROJECTOR="$REPO_ROOT/models/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5/mm_projector.bin"
+MODEL_BASE="/path/to/vicuna-7b-v1.5"
+MM_PRETRAIN_PROJECTOR="/path/to/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5/mm_projector.bin"
 
 eval_scripts=(
     "$DIR/1_eval_sqa.sh"

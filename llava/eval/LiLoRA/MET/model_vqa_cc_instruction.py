@@ -120,8 +120,8 @@ def eval_model(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="facebook/opt-350m")
-    parser.add_argument("--model-base", type=str, default=None)
+    parser.add_argument("--model-path", type=str, default="/path/to/checkpoint")
+    parser.add_argument("--model-base", type=str, default="/path/to/vicuna-7b-v1.5")
     parser.add_argument("--task-id", type=int, default=0)
     parser.add_argument("--image-folder", type=str, default="")
     parser.add_argument("--question-file", type=str, default="tables/question.jsonl")
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     parser.add_argument("--temperature", type=float, default=0)
     parser.add_argument("--top_p", type=float, default=None)
     parser.add_argument("--num_beams", type=int, default=1)
-    parser.add_argument("--mm_pretrain_projector", type=str, default="models/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5/mm_projector.bin")
+    parser.add_argument("--mm_pretrain_projector", type=str, default="/path/to/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5/mm_projector.bin")
     args = parser.parse_args()
 
     eval_model(args)
