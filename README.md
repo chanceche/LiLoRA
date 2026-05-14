@@ -1,8 +1,8 @@
 # LoRA in LoRA: Towards Parameter-Efficient Architecture Expansion for Continual Visual Instruction Tuning
 
-LiLoRA is a parameter-efficient architecture expansion method for continual visual instruction tuning. It shares LoRA components across tasks while preserving task-specific adaptation through a lightweight low-rank branch. The method stores continual task weights in a cumulative `lilora_task_bank.bin`, which keeps the latest shared matrices and all task-specific branches.
+LiLoRA is a parameter-efficient architecture expansion method for continual visual instruction tuning. It shares LoRA components across tasks while preserving task-specific adaptation through a lightweight low-rank branch. 
 
-![LiLoRA](figure/LiLoRA.pdf)
+![LiLoRA](figure/LiLoRA.png)
 
 ## Benchmark install
 
